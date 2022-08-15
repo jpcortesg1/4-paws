@@ -1,3 +1,43 @@
-from django.shortcuts import render
+import json
+from django.http.response import JsonResponse
+from django.utils.decorators import method_decorator
+from django.views import View
+from django.views.decorators.csrf import csrf_exempt
+from .models import Person
 
-# Create your views here.
+
+# This is class to management the person model (Controller)
+class PersonView(View):
+
+    @method_decorator(csrf_exempt)
+    def dispatch(self, request, *args, **kwargs):
+        return super().dispatch(request, *args, **kwargs)
+
+    def get(self, _):
+        data = {'message': 'Success', 'status': 200}
+        persons = list(Person.objects.values())
+        if(len(persons) > 0):
+            data['persons'] = persons
+        else:
+            data['message'] = 'Persons not found...'
+            data['status'] = 500
+
+        return JsonResponse(data)
+
+    def post(self, request):
+        data = {'message': 'Success', 'status': 200}
+        body = json.loads(request.body)
+        Person.objects.create(
+            name=body['name'],
+            birth_date=body['birth_date'],
+            mobile=body['mobile'],
+            email=body['email'],
+            phone=body['phone'],
+            password=body['password'],
+            role=body['role'],
+            status=body['status'],
+            notes=body['notes'],
+            address=body['address'],
+            score=body['score']
+        )
+        return JsonResponse(data)
