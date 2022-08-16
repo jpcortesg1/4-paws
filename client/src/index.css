@@ -6,3 +6,12 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafo: "Open Sans", sans-serif;
+
+  --gris: #c6e6e5;
+  --blanco: #ffff;
+  --negro: #000000;
+}

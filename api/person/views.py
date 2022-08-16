@@ -3,6 +3,7 @@ from django.http.response import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.hashers import make_password
 from .models import Person
 
 
@@ -27,17 +28,17 @@ class PersonView(View):
     def post(self, request):
         data = {'message': 'Success', 'status': 200}
         body = json.loads(request.body)
+        newPassword = make_password(body['password'])
         Person.objects.create(
             name=body['name'],
             birth_date=body['birth_date'],
             mobile=body['mobile'],
             email=body['email'],
             phone=body['phone'],
-            password=body['password'],
+            password=newPassword,
             role=body['role'],
             status=body['status'],
             notes=body['notes'],
             address=body['address'],
-            score=body['score']
         )
         return JsonResponse(data)
