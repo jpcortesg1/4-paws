@@ -2,6 +2,7 @@
   "dependencies": {
     "package.json": "^2.0.1",
     "react-hook-form": "^7.35.0",
+    "react-icons": "^4.4.0",
     "yarn": "^1.22.19"
   }
 }

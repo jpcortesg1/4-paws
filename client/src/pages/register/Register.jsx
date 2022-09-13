@@ -2,6 +2,9 @@ import { FaCss3Alt } from "react-icons/fa";
 import Topbar from "../../components/topbar/Topbar";
 import "./register.css";
 import { appendErrors, useForm } from "react-hook-form"
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
+import { useNavigate } from "react-router-dom";
 
 // const nombre = document.getElementById("nombres");
 // const apellidos = document.getElementById("apellidos");
@@ -12,10 +15,15 @@ import { appendErrors, useForm } from "react-hook-form"
 const Register = () => {
 
     const { register, formState: { errors }, watch, handleSubmit } = useForm();
+    const navigate = useNavigate()
 
     const onSubmit = (data) => {
         console.log(data);
     }
+
+    const navigation = (url) => {
+        navigate(url);
+      };
 return (
     <div>
         <Topbar title="Martin" />
@@ -117,7 +125,7 @@ return (
 
         <div>
             <label>Ya tienes una cuenta?</label>
-            <a href="">Ingresa aqui</a>
+            <a onClick={() => navigation('/login')}>Ingresa aqui</a>
         </div>
     </form>
     
@@ -133,9 +141,10 @@ return (
               <a href="nosotros.html" class="navegacion__enlace">
                 Nosotros
               </a>
-                <a href="contacto.html" class="navegacion__enlace">3105545256</a>
-                <a href="contacto.html" class="navegacion__enlace">4paws@contacto.com.co</a>
-                <a href="contacto.html" class="navegacion__enlace">4Paws</a>
+
+                <a href="whatsapp.com" class="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" class="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" class="navegacion__enlace"><BsInstagram /> 4Paws</a>
 
             </nav>
           </div>

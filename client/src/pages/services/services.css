@@ -1,85 +1,90 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px*/
-  }
-  *,
-  *:before,
-  *after {
-    box-sizing: inherit;
-  }
-  body {
-    font-family: var(--fuenteParrafo);
-    font-size: 1.6rem;
-    line-height: 2;
-  }
-  
-  /* GLOBALES*/
-  .contenedor {
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
-  }
-  a {
-    text-decoration: none;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: var(--fuenteHeading);
-    line-height: 1.2;
-  }
-  h1 {
-    font-size: 4.8rem;
-  }
-  h2 {
-    font-size: 4rem;
-  }
-  h3 {
-    font-size: 3.2rem;
-  }
-  h4 {
-    font-size: 2.8rem;
-  }
-  .producto img {
-    max-width: 25%;
-    max-height: 10%;
-  }
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px*/
+}
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuenteParrafo);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* GLOBALES*/
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+.producto img {
+  max-width: 15%;
+}
 
 .resultados{
-    background-color: cadetblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 
 .principal{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 30px;
+  margin-right: 30px;
 }
 
+.filtros{
+margin-left: 20px;
+}
+
+
 .precio, .ubicacion{
-    display:grid;
-    grid-template-rows: 1fr;
+  display:grid;
+  grid-template-rows: 1fr;
 }
 
 .precio a, .ubicacion a{
-    color: gray;
+  color: gray;
 }
 
 .productos{
-    box-shadow: 7px 13px 30px #000;
+  box-shadow: 7px 13px 30px #000;
 }
 
 .linea {
-    border-top: 1px solid gray;
-    height: 2px;
-    padding: 0;
-    margin: 20px auto 0 auto;
-  }
-  
+  border-top: 1px solid gray;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
 .producto{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
 }
