@@ -9,7 +9,7 @@
     background-color: gray;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 4px;
     color: white;
     box-shadow: 7px 13px 37px #000;
@@ -21,7 +21,7 @@
     margin-bottom: 20px;
 }
 
-.boton{
+input, select{
     width: 100%;
     background-color: gray;
     padding: 10px;
@@ -34,8 +34,14 @@
 .form-register p {
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 40px;
+	color: red;
+}
+
+.form-register label{
+	font-size: 16px;
+	padding: 2rem;
 }
 
 .form-register a{
@@ -43,9 +49,11 @@
     text-decoration: none;
 }
 
+
 .form-register a:hover{
     color: white;
     text-decoration: underline;
+	
 }
 
 .form-register .boton {
@@ -61,3 +69,25 @@
 .boton .registro{
     margin-top: 20px;
 }
+
+.checkBox{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    background-color: cadetblue;
+    padding-bottom: 3rem 0;
+    margin-top: 4rem;
+  }
+  
+.footer a:hover{
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
