@@ -4,7 +4,7 @@ import Services from "./pages/services/services";
 import Products from "./pages/products/Products";
 import Product from "./pages/product/product";
 import Login from "./pages/login/Login";
-import Dasboard from "./pages/SupplierS/Dashboard";
+import Dasboard from "./pages/dashboard/Dashboard";
 import Supplier from "./pagesS/Supplier/Supplier";
 import ListS from "./pagesS/list/List";
 import NewS from "./pagesS/new/New";
