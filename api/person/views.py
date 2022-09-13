@@ -43,6 +43,7 @@ class PersonView(View):
             return JsonResponse(data)
 
         req['password'] = newPassword
+        req['status'] = 'A'
         Person.objects.create(**req)
         return JsonResponse(req)
 

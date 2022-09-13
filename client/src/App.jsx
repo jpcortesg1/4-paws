@@ -1,14 +1,13 @@
 import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
-import Services from "./pages/services/Services";
+import Services from "./pages/services/services";
 import Products from "./pages/products/Products";
-import Product from "./pages/product/Product";
+import Product from "./pages/product/product";
 import Login from "./pages/login/Login";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
-
 
 function App() {
   return (
