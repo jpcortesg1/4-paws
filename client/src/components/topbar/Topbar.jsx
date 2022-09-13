@@ -53,7 +53,7 @@ export default function Topbar() {
             </div>
             <div
               className={`topbarItem ${
-                pathname.includes("service") && "active"
+                pathname.includes("services") && "active"
               }`}
               onClick={() => navigation("/services")}
             >

@@ -152,13 +152,11 @@ img {
 .boton:hover {
   cursor: pointer;
 }
-.boton--primario {
-  background-color: var(--negro);
+.boton {
+  background-color: cadetblue;
 }
 
-.boton--secundario {
-  background-color: var(--primario);
-}
+
 
 .cursos {
   list-style: none;
@@ -184,9 +182,13 @@ img {
 }
 
 .footer {
-  background-color: var(--negro);
+  background-color: cadetblue;
   padding-bottom: 3rem 0;
   margin-top: 4rem;
+}
+
+.footer a:hover{
+  text-decoration: none;
 }
 
 /* Sobre NOSOTROS*/

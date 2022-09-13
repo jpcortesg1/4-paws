@@ -15,9 +15,13 @@ class PersonView(View):
     def dispatch(self, request, *args, **kwargs):
         return super().dispatch(request, *args, **kwargs)
 
-    def get(self, _):
+    def get(self, _, id=0):
+        if(id > 0):
+            persons = list(Person.objects.filter(id=id).values())
+        else:
+            persons = list(Person.objects.values())
+
         data = {'message': 'Success', 'status': 200}
-        persons = list(Person.objects.values())
         if(len(persons) > 0):
             data['persons'] = persons
         else:
@@ -29,7 +33,8 @@ class PersonView(View):
     def post(self, request):
         data = {'message': 'Success', 'status': 200}
         req = validators.convert_body_to_dict(request, data)
-        validation = validators.validate_api(req)
+        newPassword = make_password(req['password'])
+        validation = validators.validate_api(req, 'post')
 
         if not validation['success']:
             data['message'] = 'Bad Request Body'
@@ -37,18 +42,29 @@ class PersonView(View):
             data['errors'] = validation['errors']
             return JsonResponse(data)
 
-        body = json.loads(request.body)
-        newPassword = make_password(body['password'])
-        Person.objects.create(
-            name=body['name'],
-            birth_date=body['birth_date'],
-            mobile=body['mobile'],
-            email=body['email'],
-            phone=body['phone'],
-            password=newPassword,
-            role=body['role'],
-            status=body['status'],
-            notes=body['notes'],
-            address=body['address'],
-        )
-        return JsonResponse(data)
+        req['password'] = newPassword
+        req['status'] = 'A'
+        Person.objects.create(**req)
+        return JsonResponse(req)
+
+    def put(self, request, id):
+        data = {'message': 'Success', 'status': 200}
+        req = validators.convert_body_to_dict(request, data)
+        validation = validators.validate_api(req, 'put')
+
+        if("password" in req):
+            newPassword = make_password(req['password'])
+            req['password'] = newPassword
+
+        if not validation['success']:
+            data['message'] = 'Bad Request Body'
+            data['status'] = 400
+            data['errors'] = validation['errors']
+            return JsonResponse(data)
+
+        Person.objects.filter(id=id).update(**req)
+        return JsonResponse({'message': 'Success', 'status': 201})
+
+    def delete(self, _, id):
+        Person.objects.filter(id=id).delete()
+        return JsonResponse({'message': 'Success', 'status': 201})

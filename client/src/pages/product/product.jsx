@@ -1,5 +1,7 @@
 import { FaCss3Alt } from "react-icons/fa";
 import "./product.css";
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
 
 export default function home() {
   return (
@@ -63,19 +65,27 @@ export default function home() {
 
         </div>
 
-    <footer class="footer">
+        <footer class="footer">
         <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">4<span class="logo__bold">Paws</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="contacto.html" class="navegacion__enlace">contacto</a>
-                </nav>
-            </div>
+          <div class="barra">
+            <a class="logo" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">
+                4<span class="logo__bold">Paws</span>
+              </h1>
+            </a>
+            <nav class="navegacion">
+              <a href="nosotros.html" class="navegacion__enlace">
+                Nosotros
+              </a>
+
+                <a href="whatsapp.com" class="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" class="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" class="navegacion__enlace"><BsInstagram /> 4Paws</a>
+
+            </nav>
+          </div>
         </div>
-    </footer>
+      </footer>
   </div>
   );
 }
