@@ -1,0 +1,128 @@
+.topbar {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(var(--pry-col), 1);
+  box-shadow: rgba(var(--com-col), 0.2) 0px 8px 24px;
+  color: rgba(var(--com-col), 1);
+  z-index: 999;
+}
+
+.topbarWrapper {
+  padding: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbarLeft,
+.topbarCenter,
+.topbarRight {
+  flex: 1;
+}
+
+.topbarTitle {
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(var(--ter-col), 1);
+}
+
+.topbarTitle span {
+  font-weight: 500;
+  color: rgba(var(--com-col), 1);
+}
+
+.topbarSearch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbarSearch input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(var(--ter-col), 1);
+  padding: 8px 13px;
+  padding-right: 34px;
+  font-size: 17px;
+  background: inherit;
+  color: rgba(var(--com-col), 1);
+}
+
+.topbarSearch input::placeholder {
+  color: rgba(var(--com-col), 1);
+}
+
+.topbarIconSearch {
+  position: relative;
+  left: -21px;
+  cursor: pointer;
+  color: rgba(var(--ter-col), 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.topbarIconSearch:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.topbarItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbarItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.topbarItem.active,
+.topbarItem:hover {
+  border-color: rgba(var(--ter-col), 1);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.topbarItem:hover {
+  transform: translateY(1px);
+}
+
+.topbarIconItem {
+  margin-right: 5px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  color: rgba(var(--ter-col), 1);
+  transform: translateX(1px) rotate(-5deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.topbarItem:hover .topbarIconItem {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(1px) rotate(5deg);
+  }
+  33% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  66% {
+    transform: translateX(-1px) rotate(-5deg);
+  }
+}

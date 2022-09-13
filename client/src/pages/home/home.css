@@ -152,6 +152,7 @@ img {
 .boton:hover {
   cursor: pointer;
 }
+<<<<<<< HEAD
 .boton--primario {
   background-color: var(--negro);
 }
@@ -159,6 +160,13 @@ img {
 .boton--secundario {
   background-color: var(--primario);
 }
+=======
+.boton {
+  background-color: cadetblue;
+}
+
+
+>>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
 
 .cursos {
   list-style: none;
@@ -184,11 +192,22 @@ img {
 }
 
 .footer {
+<<<<<<< HEAD
   background-color: var(--negro);
+=======
+  background-color: cadetblue;
+>>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
   padding-bottom: 3rem 0;
   margin-top: 4rem;
 }
 
+<<<<<<< HEAD
+=======
+.footer a:hover{
+  text-decoration: none;
+}
+
+>>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
 /* Sobre NOSOTROS*/
 
 @media (min-width: 768px) {
