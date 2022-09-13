@@ -153,7 +153,7 @@ img {
   cursor: pointer;
 }
 .boton--primario {
-  background-color: var(--negro);
+  background-color: cadetblue;
 }
 
 .boton--secundario {
@@ -184,9 +184,13 @@ img {
 }
 
 .footer {
-  background-color: var(--negro);
+  background-color: cadetblue;
   padding-bottom: 3rem 0;
   margin-top: 4rem;
+}
+
+.footer a:hover{
+  text-decoration: none;
 }
 
 /* Sobre NOSOTROS*/

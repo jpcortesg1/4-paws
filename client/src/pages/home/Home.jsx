@@ -28,7 +28,7 @@ export default function home() {
       <Topbar title="Martin" />
       <div class="contenedor contenido-principal">
         <main class="blog">
-          <h3>servicios mas usados</h3>
+          <h3>Servicios mas usados</h3>
 
           <article class="entrada">
             <div class="entrada__imagen">
@@ -153,9 +153,11 @@ export default function home() {
               <a href="nosotros.html" class="navegacion__enlace">
                 Nosotros
               </a>
-              <a href="contacto.html" class="navegacion__enlace">
-                contacto
-              </a>
+
+                <a href="whatsapp.com" class="navegacion__enlace">3105545256</a>
+                <a href="gmail.com" class="navegacion__enlace">4paws@contacto.com.co</a>
+                <a href="instagram.com" class="navegacion__enlace">4Paws</a>
+
             </nav>
           </div>
         </div>
