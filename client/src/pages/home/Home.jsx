@@ -2,12 +2,9 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Topbar from "../../components/topbar/Topbar";
 import "./home.css";
-<<<<<<< HEAD
-=======
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 
->>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
 
 export default function home() {
   const navigate = useNavigate();
@@ -34,11 +31,7 @@ export default function home() {
       <Topbar title="Martin" />
       <div class="contenedor contenido-principal">
         <main class="blog">
-<<<<<<< HEAD
-          <h3>servicios mas usados</h3>
-=======
           <h3>Servicios mas usados</h3>
->>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
 
           <article class="entrada">
             <div class="entrada__imagen">
@@ -123,11 +116,7 @@ export default function home() {
                   casa y pueda estimular su gusto y olfato
                 </p>
               </p>
-<<<<<<< HEAD
-              <a href="entrada.html" class="boton boton--secundario">
-=======
               <a onClick={() => navigation('/producto')} class="boton">
->>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
                 Mas Informacion
               </a>
             </li>
@@ -147,11 +136,7 @@ export default function home() {
                   tuyo ahora
                 </span>
               </p>
-<<<<<<< HEAD
-              <a href="entrada.html" class="boton boton--secundario">
-=======
               <a onClick={() => navigation('/producto')} class="boton">
->>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
                 Mas Informacion
               </a>
             </li>
@@ -171,17 +156,11 @@ export default function home() {
               <a href="nosotros.html" class="navegacion__enlace">
                 Nosotros
               </a>
-<<<<<<< HEAD
-              <a href="contacto.html" class="navegacion__enlace">
-                contacto
-              </a>
-=======
 
                 <a href="whatsapp.com" class="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
                 <a href="gmail.com" class="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
                 <a href="instagram.com" class="navegacion__enlace"><BsInstagram /> 4Paws</a>
 
->>>>>>> 55249c8c047e51e5612decd170a896345413aeb5
             </nav>
           </div>
         </div>
