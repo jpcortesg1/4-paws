@@ -4,18 +4,19 @@ import { useForm } from "react-hook-form";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Register = () => {
   const {
     register,
     formState: { errors },
-    watch,
     handleSubmit,
   } = useForm();
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const res = await axios.post("http://127.0.0.1:8000/api/persons/", data);
+    console.log("🚀 ~ file: Register.jsx ~ line 19 ~ onSubmit ~ res", res);
   };
 
   const navigation = (url) => {
@@ -32,7 +33,7 @@ const Register = () => {
           <label>Nombre</label>
           <input
             type="text"
-            {...register("nombre", {
+            {...register("name", {
               required: true,
               maxLength: 10,
             })}
@@ -49,7 +50,7 @@ const Register = () => {
           <label>Fecha de nacimiento</label>
           <input
             type="date"
-            {...register("fechaNacimiento", {
+            {...register("birth_date", {
               required: true,
             })}
           />
@@ -62,7 +63,7 @@ const Register = () => {
           <label>Telefono</label>
           <input
             type="number"
-            {...register("telefono", {
+            {...register("mobile", {
               required: true,
               minLength: 10,
               maxLength: 10,
@@ -111,18 +112,7 @@ const Register = () => {
 
         <div>
           <label>Rol</label>
-          <select {...register("rol")}>
-            <option value="C">Cliente</option>
-            <option value="P">Dueño empresa</option>
-            <option value="E">Empleado</option>
-          </select>
-        </div>
-
-        <div>
-          <label>Status</label>
-          <select {...register("status"), {
-              required: true,
-            }}>
+          <select {...register("role")}>
             <option value="C">Cliente</option>
             <option value="P">Dueño empresa</option>
             <option value="E">Empleado</option>
@@ -133,7 +123,7 @@ const Register = () => {
           <label>Notas</label>
           <input
             type="text"
-            {...register("notas", {
+            {...register("notes", {
               required: true,
             })}
           />
@@ -146,7 +136,7 @@ const Register = () => {
           <label>Direccion</label>
           <input
             type="text"
-            {...register("direccion", {
+            {...register("address", {
               required: true,
             })}
           />
@@ -159,9 +149,9 @@ const Register = () => {
           <label>Terminos y condiciones</label>
           <input
             type="checkbox"
-            {...register("termsconditions", {
-              required: true,
-            })}
+            // {...register("termsconditions", {
+            //   required: true,
+            // })}
           />
           {errors.termsconditions?.type === "required" && (
             <p>Debes aceptar los terminos y condiciones</p>

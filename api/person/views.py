@@ -34,7 +34,7 @@ class PersonView(View):
         data = {'message': 'Success', 'status': 200}
         req = validators.convert_body_to_dict(request, data)
         newPassword = make_password(req['password'])
-        validation = validators.validate_api(req)
+        validation = validators.validate_api(req, 'post')
 
         if not validation['success']:
             data['message'] = 'Bad Request Body'
