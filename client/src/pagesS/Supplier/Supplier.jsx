@@ -7,7 +7,9 @@ const Supplier = () => {
     return (
         <div className="Supplier">
             <Sidebar />
-            <div className="supplierContainer">container</div>
+            <h2 className="supplierContainer">
+                     <span>Interfaces</span>
+                </h2>
 
         </div>
     );
