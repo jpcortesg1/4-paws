@@ -1,7 +1,7 @@
 .Sidebar{
     background-color: rgb(255, 255, 255);
     flex: 1;
-    border-right: 0.5px solid #058c9e;
+    border-right: 2px solid #058c9e;
     min-height: 100vh;
     .topS{
         height: 50px;
@@ -46,15 +46,44 @@
                 cursor: pointer;
 
                 &:hover {
-                    background-color: #058c9e82;
+                    background-color: #afcfd0;
                   }
             }
             .icon{
                 font-size: 18px;
                 color: #058c9e;
             }
-
-
+            span{
+                font-size: 14px;
+                font-weight: 500;
+                color: #000000;
+                margin-left: 10px;
+            }
         }
+    }
+
+    .bottomS{
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .colorOptions{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
+            &:nth-child(3){
+                background-color: #058c9e;
+            }
+        } 
     }
 }

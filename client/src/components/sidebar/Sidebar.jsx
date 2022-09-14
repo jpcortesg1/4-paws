@@ -1,4 +1,3 @@
-import React from "react";
 import "./Sidebar.scss";
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import DvrOutlinedIcon from '@mui/icons-material/DvrOutlined';
@@ -82,7 +81,11 @@ const Sidebar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="bottomS">color options</div>
+            <div className="bottomS">
+                <div className="colorOptions"></div>
+                <div className="colorOptions"></div>
+                <div className="colorOptions"></div>
+            </div>
         </div>
     );
 };

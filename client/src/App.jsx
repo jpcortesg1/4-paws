@@ -4,12 +4,12 @@ import Services from "./pages/services/services";
 import Products from "./pages/products/Products";
 import Product from "./pages/product/product";
 import Login from "./pages/login/Login";
-import Dasboard from "./pages/dashboard/Dashboard";
+//import Dasboard from "./pages/dashboard/Dashboard";
 import Supplier from "./pagesS/Supplier/Supplier";
 import ListS from "./pagesS/list/List";
 import NewS from "./pagesS/new/New";
 import SingleS from "./pagesS/single/Single";
-import LoginS from "./pagesS/logS/LogS";
+import LoginS from "./pagesS/loginS/LoginS";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -27,10 +27,9 @@ function App() {
             <Route path="products" element={<Products />} />
             <Route path="product" element={<Product />} />
             <Route path="login" element={<Login />} />
-            <Route path="dasboard" element={<Dasboard />} />
             <Route path="supplier" >
               <Route index element={<Supplier/>}/>
-              <Route path="logS" element={<LoginS/>}/>
+              <Route path="loginS" element={<LoginS/>}/>
               <Route path="user">
                 <Route index element={<ListS/>}/>
                 <Route path=":userid" element={<SingleS/>}/>
