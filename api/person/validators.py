@@ -3,7 +3,7 @@ from . import serializers
 
 
 # Validate the request data
-def validate_api(request):
+def validate_api(request, type):
     # Prepare the response data
     res = {}
     res['success'] = True
@@ -11,7 +11,11 @@ def validate_api(request):
     res['details'] = None
 
     # Validate the request data
-    validation = serializers.PersonSerializer(data=request)
+    if type == 'post':
+        validation = serializers.PersonSerializer(data=request)
+
+    if type == 'put':
+        validation = serializers.PersonUpdateSerializer(data=request)
 
     # Positive response
     if validation.is_valid():

@@ -14,4 +14,9 @@
   --gris: #c6e6e5;
   --blanco: #ffff;
   --negro: #000000;
+
+  --pry-col: 250, 250, 250;
+  --sec-col: 179, 234, 232;
+  --ter-col: 0, 138, 154;
+  --com-col: 0, 0, 0;
 }
