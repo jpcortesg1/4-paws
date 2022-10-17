@@ -3,6 +3,8 @@ import { AiOutlineHome, AiOutlineShopping } from "react-icons/ai";
 import { BiBone } from "react-icons/bi";
 import "./topbar.css";
 import { useLocation, useNavigate } from "react-router-dom";
+import { HiShoppingCart } from "react-icons/hi";
+
 
 export default function Topbar() {
   const navigate = useNavigate();
@@ -53,7 +55,7 @@ export default function Topbar() {
             </div>
             <div
               className={`topbarItem ${
-                pathname.includes("service") && "active"
+                pathname.includes("services") && "active"
               }`}
               onClick={() => navigation("/services")}
             >
@@ -72,6 +74,17 @@ export default function Topbar() {
                 <FaRegUser />
               </span>
               Register
+            </div>
+            <div
+              className={`topbarItem ${
+                pathname.includes("carrito") && "active"
+              }`}
+              onClick={() => navigation("/carrito")}
+            >
+              <span className="topbarIconItem">
+                <HiShoppingCart />
+              </span>
+              Cart
             </div>
           </div>
         </div>
