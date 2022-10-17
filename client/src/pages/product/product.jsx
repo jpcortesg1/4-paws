@@ -34,25 +34,31 @@ export default function Products() {
 
         </div>
         <div className="ProductoArticulosSimilares">
-
         </div>
     </div>
+        
     <footer class="footer">
         <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">4<span class="logo__bold">Paws</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                        <a  href="contacto.html" class="navegacion__enlace ">3105545256</a>
-                        <a href="contacto.html" class="navegacion__enlace">4paws@contacto.com.co</a>
-                        <a href="contacto.html" class="navegacion__enlace fa fa-instagram">4Paws</a>
+          <div class="barra">
+            <a class="logo" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">
+                4<span class="logo__bold">Paws</span>
+              </h1>
+            </a>
+            <nav class="navegacion">
+              <a href="nosotros.html" class="navegacion__enlace">
+                Nosotros
+              </a>
 
-                </nav>
-            </div>
+                <a href="whatsapp.com" class="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" class="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" class="navegacion__enlace"><BsInstagram /> 4Paws</a>
+
+            </nav>
+          </div>
         </div>
-    </footer>
-  </div>
-  );
-  }
+        </footer>
+        
+        </div>
+    );
+}

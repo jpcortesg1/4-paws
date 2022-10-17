@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Topbar from "../../components/topbar/Topbar";
 import "./home.css";
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
+
 
 export default function home() {
   const navigate = useNavigate();
@@ -113,7 +116,7 @@ export default function home() {
                   casa y pueda estimular su gusto y olfato
                 </p>
               </p>
-              <a href="entrada.html" class="boton boton--secundario">
+              <a onClick={() => navigation('/producto')} class="boton">
                 Mas Informacion
               </a>
             </li>
@@ -133,7 +136,7 @@ export default function home() {
                   tuyo ahora
                 </span>
               </p>
-              <a href="entrada.html" class="boton boton--secundario">
+              <a onClick={() => navigation('/producto')} class="boton">
                 Mas Informacion
               </a>
             </li>
@@ -153,10 +156,10 @@ export default function home() {
               <a href="nosotros.html" class="navegacion__enlace">
                 Nosotros
               </a>
+                <a href="whatsapp.com" class="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" class="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" class="navegacion__enlace"><BsInstagram /> 4Paws</a>
 
-                <a href="whatsapp.com" class="navegacion__enlace">3105545256</a>
-                <a href="gmail.com" class="navegacion__enlace">4paws@contacto.com.co</a>
-                <a href="instagram.com" class="navegacion__enlace">4Paws</a>
 
             </nav>
           </div>

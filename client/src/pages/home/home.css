@@ -157,9 +157,7 @@ img {
   background-color: cadetblue;
 }
 
-.boton--secundario {
-  background-color: var(--primario);
-}
+
 
 .cursos {
   list-style: none;
