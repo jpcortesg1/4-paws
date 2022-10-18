@@ -11,6 +11,7 @@ import QueryStatsOutlinedIcon from '@mui/icons-material/QueryStatsOutlined';
 import HealingOutlinedIcon from '@mui/icons-material/HealingOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
@@ -30,10 +31,12 @@ const Sidebar = () => {
                         <HomeOutlinedIcon className="icon" />
                         <span> Main Page</span>
                     </li>
-                    <li>
-                        <DashboardOutlinedIcon className="icon"/>
-                        <span> Dasboard</span>
-                    </li>
+                    <Link to="/supplier" style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardOutlinedIcon className="icon"/>
+                            <span> Dasboard</span>
+                        </li>
+                    </Link>
                     <li>
                         <NotificationsOutlinedIcon className="icon"/>
                         <span> Notification</span>
@@ -49,10 +52,12 @@ const Sidebar = () => {
                         <span> delivery</span>
                     </li>
                     <p className="title">USEFUL</p>
-                    <li>
-                        <DvrOutlinedIcon className="icon"/>
-                        <span> Analitic</span>
-                    </li>
+                    <Link to="/supplier/manage" style={{ textDecoration: "none" }}>
+                        <li>
+                            <DvrOutlinedIcon className="icon"/>
+                            <span> manage</span>
+                        </li>
+                    </Link>
                     <li>
                         <PsychologyAltOutlinedIcon className="icon"/>
                         <span> logs</span>

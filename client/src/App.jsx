@@ -29,7 +29,7 @@ function App() {
             <Route path="supplier" >
               <Route index element={<Supplier/>}/>
               <Route path="loginS" element={<LoginS/>}/>
-              <Route path="user">
+              <Route path="manage">
                 <Route index element={<ListS/>}/>
                 <Route path=":userid" element={<SingleS/>}/>
                 <Route path="new" element={<NewS/>} />
