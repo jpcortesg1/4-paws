@@ -6,13 +6,20 @@ import Topbar from "../../components/topbar/Topbar";
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 
-export default function Product() {
+export default function Products() {
+  const navigate = useNavigate();
+
+  const navigation = (url) => {
+      navigate(url);
+    };
   return (
 <div>
     <Topbar title="Martin" />
     <div className="resultados">
         <h5>Resultados "(20)"</h5>
-        <h5>Ordenar por: Destacados</h5>
+        <div className="Ordenar">
+            <h5>Ordenar por: Destacados</h5>
+        </div>
     </div>
     <div className="principal">
         <div className="filtros">
@@ -36,9 +43,9 @@ export default function Product() {
 
         <div className="productos">
             <div className="producto">
-                <img src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
+                <img onClick={() => navigation("/product4")} src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
                 <div>
-                    <h3>Kong</h3>
+                    <h3 onClick={() => navigation("/product4")}>Kong</h3>
                     <p>Indispensable para que tu mascota pueda estar tranquila en
                   casa y pueda estimular su gusto y olfato</p>
                 </div>
@@ -48,9 +55,9 @@ export default function Product() {
             </div>
             <div className="linea"></div>
             <div className="producto">
-                <img src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
+                <img onClick={() => navigation("/product5")} src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
                 <div>
-                    <h3>Comederos elevados</h3>
+                    <h3 onClick={() => navigation("/product5")}>Comederos elevados</h3>
                     <p>Comederos para mascotas. Sirve para todo tipo de mascotas y le
                   un toque mas elegante a tu casa y a tu mascota. Tenemos
                   diferentes precios y tamaños. Que estas esperando. Consigue el
@@ -63,9 +70,9 @@ export default function Product() {
             <div className="linea"></div>
 
             <div className="producto">
-                <img src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
+                <img onClick={() => navigation("/product5")} src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
                 <div>
-                    <h3>Comederos elevados</h3>
+                    <h3 onClick={() => navigation("/product5")}>Comederos elevados</h3>
                     <p>Comederos para mascotas. Sirve para todo tipo de mascotas y le
                   un toque mas elegante a tu casa y a tu mascota. Tenemos
                   diferentes precios y tamaños. Que estas esperando. Consigue el
@@ -77,9 +84,9 @@ export default function Product() {
             </div>
             <div className="linea"></div>
             <div className="producto">
-                <img src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
+                <img onClick={() => navigation("/product4")} src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
                 <div>
-                    <h3>Kong</h3>
+                    <h3 onClick={() => navigation("/product4")}>Kong</h3>
                     <p>Indispensable para que tu mascota pueda estar tranquila en
                   casa y pueda estimular su gusto y olfato</p>
                 </div>
@@ -89,9 +96,9 @@ export default function Product() {
             </div>
             <div className="linea"></div>
             <div className="producto">
-                <img src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
+                <img onClick={() => navigation("/product5")} src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
                 <div>
-                    <h3>Comederos elevados</h3>
+                    <h3 onClick={() => navigation("/product5")}>Comederos elevados</h3>
                     <p>Comederos para mascotas. Sirve para todo tipo de mascotas y le
                   un toque mas elegante a tu casa y a tu mascota. Tenemos
                   diferentes precios y tamaños. Que estas esperando. Consigue el
@@ -104,9 +111,9 @@ export default function Product() {
             <div className="linea"></div>
 
             <div className="producto">
-                <img src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
+                <img onClick={() => navigation("/product5")} src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
                 <div>
-                    <h3>Comederos elevados</h3>
+                    <h3 onClick={() => navigation("/product5")}>Comederos elevados</h3>
                     <p>Comederos para mascotas. Sirve para todo tipo de mascotas y le
                   un toque mas elegante a tu casa y a tu mascota. Tenemos
                   diferentes precios y tamaños. Que estas esperando. Consigue el
@@ -118,9 +125,9 @@ export default function Product() {
             </div>
             <div className="linea"></div>
             <div className="producto">
-                <img src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
+                <img onClick={() => navigation("/product4")} src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
                 <div>
-                    <h3>Kong</h3>
+                    <h3 onClick={() => navigation("/product4")}>Kong</h3>
                     <p>Indispensable para que tu mascota pueda estar tranquila en
                   casa y pueda estimular su gusto y olfato</p>
                 </div>
@@ -130,9 +137,9 @@ export default function Product() {
             </div>
             <div className="linea"></div>
             <div className="producto">
-                <img src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
+                <img onClick={() => navigation("/product5")} src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
                 <div>
-                    <h3>Comederos elevados</h3>
+                    <h3 onClick={() => navigation("/product5")}>Comederos elevados</h3>
                     <p>Comederos para mascotas. Sirve para todo tipo de mascotas y le
                   un toque mas elegante a tu casa y a tu mascota. Tenemos
                   diferentes precios y tamaños. Que estas esperando. Consigue el
@@ -145,9 +152,9 @@ export default function Product() {
             <div className="linea"></div>
 
             <div className="producto">
-                <img src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
+                <img onClick={() => navigation("/product5")} src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
                 <div>
-                    <h3>Comederos elevados</h3>
+                    <h3 onClick={() => navigation("/product5")}>Comederos elevados</h3>
                     <p>Comederos para mascotas. Sirve para todo tipo de mascotas y le
                   un toque mas elegante a tu casa y a tu mascota. Tenemos
                   diferentes precios y tamaños. Que estas esperando. Consigue el

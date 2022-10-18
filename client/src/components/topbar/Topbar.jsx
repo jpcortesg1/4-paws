@@ -77,9 +77,9 @@ export default function Topbar() {
             </div>
             <div
               className={`topbarItem ${
-                pathname.includes("carrito") && "active"
+                pathname.includes("shoppingcart") && "active"
               }`}
-              onClick={() => navigation("/carrito")}
+              onClick={() => navigation("/shoppingcart")}
             >
               <span className="topbarIconItem">
                 <HiShoppingCart />

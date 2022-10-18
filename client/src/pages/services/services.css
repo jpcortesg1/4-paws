@@ -64,6 +64,10 @@ html {
     grid-template-rows: 1fr;
 }
 
+.Ordenar{
+  margin-left: 45rem;
+}
+
 .precio a, .ubicacion a{
     color: gray;
 }

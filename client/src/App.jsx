@@ -8,6 +8,7 @@ import Product2 from "./pages/product/Product2";
 import Product3 from "./pages/product/Product3";
 import Product4 from "./pages/product/Product4";
 import Product5 from "./pages/product/Product5";
+import ShoppingCart from "./pages/shoppingcart/shoppingcart";
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/product3" element={<Product3 />} />
           <Route path="/product4" element={<Product4 />} />
           <Route path="/product5" element={<Product5 />} />
+          <Route path="/shoppingcart" element={<ShoppingCart />} />
         </Routes>
       </BrowserRouter>
     </div>
