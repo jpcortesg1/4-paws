@@ -160,22 +160,22 @@ export default function Product() {
             <div className="linea"></div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="contenedor">
-          <div class="barra">
-            <a class="logo" href="index.html">
-              <h1 class="logo__nombre no-margin centrar-texto">
-                4<span class="logo__bold">Paws</span>
+    <footer className="footer">
+        <div className="contenedor">
+          <div className="barra">
+            <a className="logo" href="index.html">
+              <h1 className="logo__nombre no-margin centrar-texto">
+                4<span className="logo__bold">Paws</span>
               </h1>
             </a>
-            <nav class="navegacion">
-              <a href="nosotros.html" class="navegacion__enlace">
+            <nav className="navegacion">
+              <a href="nosotros.html" className="navegacion__enlace">
                 Nosotros
               </a>
 
-                <a href="whatsapp.com" class="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
-                <a href="gmail.com" class="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
-                <a href="instagram.com" class="navegacion__enlace"><BsInstagram /> 4Paws</a>
+                <a href="whatsapp.com" className="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" className="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" className="navegacion__enlace"><BsInstagram /> 4Paws</a>
 
             </nav>
           </div>

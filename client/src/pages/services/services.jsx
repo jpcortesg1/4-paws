@@ -165,17 +165,17 @@ export default function Services() {
             <div className="linea"></div>
             </div>
     </div>
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">4<span class="logo__bold">Paws</span></h1>
+    <footer className="footer">
+        <div className="contenedor">
+            <div className="barra">
+                <a className="logo" href="index.html">
+                    <h1 className="logo__nombre no-margin centrar-texto">4<span className="logo__bold">Paws</span></h1>
                 </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                        <a  href="contacto.html" class="navegacion__enlace ">3105545256</a>
-                        <a href="contacto.html" class="navegacion__enlace">4paws@contacto.com.co</a>
-                        <a href="contacto.html" class="navegacion__enlace fa fa-instagram">4Paws</a>
+                <nav className="navegacion">
+                    <a href="nosotros.html" className="navegacion__enlace">Nosotros</a>
+                        <a  href="contacto.html" className="navegacion__enlace ">3105545256</a>
+                        <a href="contacto.html" className="navegacion__enlace">4paws@contacto.com.co</a>
+                        <a href="contacto.html" className="navegacion__enlace fa fa-instagram">4Paws</a>
 
                 </nav>
             </div>

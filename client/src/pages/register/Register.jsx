@@ -1,14 +1,11 @@
 import { FaCss3Alt } from "react-icons/fa";
 import Topbar from "../../components/topbar/Topbar";
 import "./register.css";
+import { useNavigate } from "react-router-dom";
 import { appendErrors, useForm } from "react-hook-form"
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
 
-// const nombre = document.getElementById("nombres");
-// const apellidos = document.getElementById("apellidos");
-// const email = document.getElementById("correo");
-// const contraseña = document.getElementById("contraseña");
-// const registrar = document.getElementById("registrar");
-// const listaInputs = document.querySelectorAll(".boton");
 const Register = () => {
 
     const { register, formState: { errors }, watch, handleSubmit } = useForm();
@@ -16,19 +13,26 @@ const Register = () => {
     const onSubmit = (data) => {
         console.log(data);
     }
+
+    const navigate = useNavigate();
+
+    const navigation = (url) => {
+        navigate(url);
+      };
+
 return (
     <div>
         <Topbar title="Martin" />
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="#">
-                    <h1 class="logo__nombre no-margin centrar-texto">4<span class="logo__bold">PAWS</span></h1>
+        <div className="contenedor">
+            <div className="barra">
+                <a className="logo" href="#">
+                    <h1 className="logo__nombre no-margin centrar-texto">4<span className="logo__bold">PAWS</span></h1>
                 </a>
-                <nav class="navegacion">
-                    <a href="#" class="navegacion__enlace">Inicio</a>
-                    <a href="#" class="navegacion__enlace">Productos</a>
-                    <a href="#" class="navegacion__enlace">Servicios</a>
-                    <a href="http://localhost:5173/register" class="navegacion__enlace">Perfil</a>
+                <nav className="navegacion">
+                    <a href="#" className="navegacion__enlace">Inicio</a>
+                    <a href="#" className="navegacion__enlace">Productos</a>
+                    <a href="#" className="navegacion__enlace">Servicios</a>
+                    <a href="http://localhost:5173/register" className="navegacion__enlace">Perfil</a>
                     
                 </nav>
             </div>
@@ -126,29 +130,30 @@ return (
             })}/>
             {errors.termsconditions?.type === 'required' && <p>Debes aceptar los terminos y condiciones</p>}
         </div>
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Registrarme" />
 
         <div>
             <label>Ya tienes una cuenta?</label>
-            <a href="">Ingresa aqui</a>
+            <a onClick={() => navigation("/login")} className="IrLogin">Ingresa aqui</a>
         </div>
     </form>
     
-    <footer class="footer">
-        <div class="contenedor">
-          <div class="barra">
-            <a class="logo" href="index.html">
-              <h1 class="logo__nombre no-margin centrar-texto">
-                4<span class="logo__bold">Paws</span>
+    <footer className="footer">
+        <div className="contenedor">
+          <div className="barra">
+            <a className="logo" href="index.html">
+              <h1 className="logo__nombre no-margin centrar-texto">
+                4<span className="logo__bold">Paws</span>
               </h1>
             </a>
-            <nav class="navegacion">
-              <a href="nosotros.html" class="navegacion__enlace">
+            <nav className="navegacion">
+              <a href="nosotros.html" className="navegacion__enlace">
                 Nosotros
               </a>
-                <a href="contacto.html" class="navegacion__enlace">3105545256</a>
-                <a href="contacto.html" class="navegacion__enlace">4paws@contacto.com.co</a>
-                <a href="contacto.html" class="navegacion__enlace">4Paws</a>
+
+                <a href="whatsapp.com" className="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" className="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" className="navegacion__enlace"><BsInstagram /> 4Paws</a>
 
             </nav>
           </div>

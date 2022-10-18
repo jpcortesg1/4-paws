@@ -5,11 +5,11 @@
 }
 
 .form-register{
-    width: 400px;
+    width: 500px;
     background-color: gray;
     padding: 30px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 2px;
     border-radius: 4px;
     color: white;
     box-shadow: 7px 13px 37px #000;
@@ -83,6 +83,8 @@ input, select{
   
 .footer a:hover{
     text-decoration: none;
+    color: white;
+    
   }
 
 
