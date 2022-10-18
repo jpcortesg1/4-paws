@@ -13,6 +13,7 @@ const Register = () => {
     const onSubmit = (data) => {
         console.log(data);
     }
+    
 
     const navigate = useNavigate();
 
