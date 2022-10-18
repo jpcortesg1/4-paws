@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaCss3Alt } from "react-icons/fa";
 import "./services.css";
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
 import Topbar from "../../components/topbar/Topbar";
 
 export default function Services() {
@@ -167,20 +169,25 @@ export default function Services() {
     </div>
     <footer className="footer">
         <div className="contenedor">
-            <div className="barra">
-                <a className="logo" href="index.html">
-                    <h1 className="logo__nombre no-margin centrar-texto">4<span className="logo__bold">Paws</span></h1>
-                </a>
-                <nav className="navegacion">
-                    <a href="nosotros.html" className="navegacion__enlace">Nosotros</a>
-                        <a  href="contacto.html" className="navegacion__enlace ">3105545256</a>
-                        <a href="contacto.html" className="navegacion__enlace">4paws@contacto.com.co</a>
-                        <a href="contacto.html" className="navegacion__enlace fa fa-instagram">4Paws</a>
+          <div className="barra">
+            <a className="logo" href="index.html">
+              <h1 className="logo__nombre no-margin centrar-texto">
+                4<span className="logo__bold">Paws</span>
+              </h1>
+            </a>
+            <nav className="navegacion">
+              <a href="nosotros.html" className="navegacion__enlace">
+                Nosotros
+              </a>
 
-                </nav>
-            </div>
+                <a href="whatsapp.com" className="navegacion__enlace"> <BsWhatsapp/> 3105545256</a>
+                <a href="gmail.com" className="navegacion__enlace"><GoMail/> 4paws@contacto.com.co</a>
+                <a href="instagram.com" className="navegacion__enlace"><BsInstagram /> 4Paws</a>
+
+            </nav>
+          </div>
         </div>
-    </footer>
+      </footer>
   </div>
   );
   }

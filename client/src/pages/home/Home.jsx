@@ -71,7 +71,7 @@ export default function home() {
                 tarifas que se adaptan a todas las personas. Contactame para mas
                 informacion
               </p>
-              <a onClick={() => navigation("/product")} className="boton boton--primario">
+              <a onClick={() => navigation("/product2")} className="boton boton--primario">
                 Ver mas
               </a>
             </div>
@@ -93,7 +93,7 @@ export default function home() {
                 completo con el mayor cuidado para tu mascota. Que estas
                 esperando.
               </p>
-              <a onClick={() => navigation("/product")} className="boton boton--primario">
+              <a onClick={() => navigation("/product3")} className="boton boton--primario">
                 Ver mas
               </a>
             </div>
@@ -116,7 +116,7 @@ export default function home() {
                   casa y pueda estimular su gusto y olfato
                 </p>
               </p>
-              <a onClick={() => navigation('/product')} className="boton boton--primario">
+              <a onClick={() => navigation('/product4')} className="boton boton--primario">
                 Mas Informacion
               </a>
             </li>
@@ -136,7 +136,7 @@ export default function home() {
                   tuyo ahora
                 </span>
               </p>
-              <a onClick={() => navigation('/product')} className="boton boton--primario">
+              <a onClick={() => navigation('/product5')} className="boton boton--primario">
                 Mas Informacion
               </a>
             </li>

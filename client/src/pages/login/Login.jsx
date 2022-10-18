@@ -4,6 +4,7 @@ import "./login.css";
 import { appendErrors, useForm } from "react-hook-form"
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
@@ -12,6 +13,13 @@ const Login = () => {
     const onSubmit = (data) => {
         console.log(data);
     }
+
+    const navigate = useNavigate();
+
+    const navigation = (url) => {
+        navigate(url);
+      };
+
 return (
     <div>
         <Topbar title="Martin" />
@@ -54,7 +62,7 @@ return (
 
         <div>
             <label>Aun no tienes una cuenta?</label>
-            <a href="">Registrate aqui</a>
+            <a onClick={() => navigation("/register")}>Registrate aqui</a>
         </div>
     </form>
     
