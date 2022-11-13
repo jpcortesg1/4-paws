@@ -10,13 +10,13 @@ import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 
 const Navbar = () => {
 
+
   return (
-    <div className="Navbar">
+    <div className="navbar">
       <div className="wrapper">
         <div className="search">
-            <input type="text" placeholder="Search..." />
-            <SearchOutlinedIcon />
-          
+          <input type="text" placeholder="Search..." />
+          <SearchOutlinedIcon />
         </div>
         <div className="items">
           <div className="item">
@@ -24,7 +24,9 @@ const Navbar = () => {
             English
           </div>
           <div className="item">
-            <DarkModeOutlinedIcon className="icon"
+            <DarkModeOutlinedIcon
+              className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}
             />
           </div>
           <div className="item">

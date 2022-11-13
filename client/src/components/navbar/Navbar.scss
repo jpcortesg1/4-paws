@@ -1,11 +1,11 @@
-.Navbar {
-    height: 52px;
-    border-bottom: 2px solid #058c9e;
+  .navbar {
+    height: 50px;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #000000;
-    background-color: #ffffff;
+    color: #555;
+  
     .wrapper {
       width: 100%;
       padding: 20px;
@@ -16,19 +16,16 @@
       .search {
         display: flex;
         align-items: center;
-        padding: 0.25px;
-        gap: 20px;
+        border: 0.5px solid lightgray;
+        padding: 3px;
   
         input {
           border: none;
           outline: none;
           background: transparent;
-          align-items: center;
-          gap: 20px;
   
           &::placeholder {
-            font-size: 14px;
-            gap: 20px;
+            font-size: 12px;
           }
         }
       }
@@ -71,4 +68,4 @@
         }
       }
     }
-  }
+  } 
