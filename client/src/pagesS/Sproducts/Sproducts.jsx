@@ -3,13 +3,13 @@ import "./SProducts.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Chart from "../../components/chart/Chart";
-import List from "../../components/table/Table";
 
-const Single = () => {
+
+const Sproducts = () => {
   return (
-    <div className="single">
+    <div className="Sproducts">
       <Sidebar />
-      <div className="singleContainer">
+      <div className="SproductsContainer">
         <Navbar />
         <div className="top">
           <div className="left">
@@ -17,44 +17,41 @@ const Single = () => {
             <h1 className="title">Information</h1>
             <div className="item">
               <img
-                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                src="https://www.mercadoslpineda.co/4558-thickbox_default/cuido-dog-chow-x-475-g-adultos-razas-medianas.jpg"
                 alt=""
                 className="itemImg"
               />
               <div className="details">
-                <h1 className="itemTitle">Jane Doe</h1>
+                <h1 className="itemTitle">Cuido DogChow</h1>
                 <div className="detailItem">
-                  <span className="itemKey">Email:</span>
-                  <span className="itemValue">janedoe@gmail.com</span>
+                  <span className="itemKey">Tipo:</span>
+                  <span className="itemValue">Alimento</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Phone:</span>
-                  <span className="itemValue">+1 2345 67 89</span>
+                  <span className="itemKey">Precio:</span>
+                  <span className="itemValue">10.000</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Address:</span>
+                  <span className="itemKey">Razas:</span>
                   <span className="itemValue">
-                    Elton St. 234 Garden Yd. NewYork
+                    Perros Grandes
                   </span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Country:</span>
-                  <span className="itemValue">USA</span>
+                  <span className="itemKey">ID:</span>
+                  <span className="itemValue">4312</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="right">
-            <Chart aspect={3 / 3} title="User sold ( Last 6 Months)" />
+            <Chart aspect={3 / 3} title="Product feedback ( Last 6 Months)" />
           </div>
         </div>
-        <div className="bottom">
-        <h1 className="title">Last Transactions</h1>
-          <List/>
-        </div>
+
       </div>
     </div>
   );
 };
 
-export default Single;
+export default Sproducts;

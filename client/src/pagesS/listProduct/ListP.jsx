@@ -1,8 +1,7 @@
-import "./List.scss"
+import "./ListP.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
-import Workerstable from "../../components/workerstable/Workerestable"
-
+import Productstable from "../../components/productstable/Productstable"
 
 
 const List = () => {
@@ -11,7 +10,7 @@ const List = () => {
             <Sidebar/>
             <div className="listContainer">
                 <Navbar/>
-                <Workerstable/>
+                <Productstable/>
             </div>
         </div>
     );

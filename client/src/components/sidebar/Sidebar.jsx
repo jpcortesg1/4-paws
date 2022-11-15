@@ -17,9 +17,11 @@ const Sidebar = () => {
     return (
         <div className="Sidebar">
             <div className="topS">
+                <Link to="/supplier" style={{ textDecoration: "none" }}>
                 <h1 className="sidebarTitle">
                      4<span>PAWS</span>
                 </h1>  
+                </Link>
             </div>
 
             <hr />
@@ -52,16 +54,18 @@ const Sidebar = () => {
                         <span> delivery</span>
                     </li>
                     <p className="title">USEFUL</p>
-                    <Link to="/supplier/manage" style={{ textDecoration: "none" }}>
+                    <Link to="/supplier/manage-Employes" style={{ textDecoration: "none" }}>
                         <li>
                             <DvrOutlinedIcon className="icon"/>
-                            <span> manage</span>
+                            <span>Manage Employes</span>
                         </li>
                     </Link>
+                    <Link to="/supplier/manage-Products" style={{ textDecoration: "none" }}>
                     <li>
-                        <PsychologyAltOutlinedIcon className="icon"/>
-                        <span> logs</span>
+                        <DvrOutlinedIcon className="icon"/>
+                        <span>Manage Products</span>
                     </li>
+                    </Link>
                     <p className="title">SERVICE</p>
                     <li>
                         <QueryStatsOutlinedIcon className="icon"/>

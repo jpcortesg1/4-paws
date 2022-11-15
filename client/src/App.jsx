@@ -5,7 +5,8 @@ import Products from "./pages/products/Products";
 import Product from "./pages/product/product";
 import Login from "./pages/login/Login";
 import Supplier from "./pagesS/Supplier/Supplier";
-import ListS from "./pagesS/list/List";
+import ListE from "./pagesS/list/List";
+import ListP from "./pagesS/listProduct/ListP";
 import NewU from "./pagesS/newU/NewU";
 import NewP from "./pagesS/newP/NewP";
 import SingleS from "./pagesS/single/Single";
@@ -31,10 +32,13 @@ function App() {
             <Route path="supplier" >
               <Route index element={<Supplier/>}/>
               <Route path="loginS" element={<LoginS/>}/>
-              <Route path="manage">
-                <Route index element={<ListS/>}/>
+              <Route path="manage-Employes">
+                <Route index element={<ListE/>}/>
                 <Route path=":userid" element={<SingleS/>}/>
                 <Route path="newU" element={<NewU/>} />
+              </Route>
+              <Route path="manage-Products">
+                <Route index element={<ListP/>}/>
                 <Route path=":productId" element={<SProducts/>}/>
                 <Route path="newP" element={<NewP/>} />
               </Route>
