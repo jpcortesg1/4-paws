@@ -9,7 +9,7 @@ import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
 
 
 
-export default function Product() {
+export default function Product2() {
 
   const navigate = useNavigate();
 
@@ -22,13 +22,13 @@ export default function Product() {
 
   <div className="Productoprincipal">
     <div className="Productoimagen">
-        <img src="https://entrecaninos.co/sitio/wp-content/uploads/2022/04/ENTRECANINOS-2.png" alt="" />
+        <img src="https://files.rcnradio.com/2021-04/Paseador%20de%20perros.jpg" alt="" />
     </div>
 
     
     <div className="ProductoInformacion">
       <div className="ProductoTittulo">
-        <h4 >Entrecaninos</h4>
+        <h4 >Jorge Granados</h4>
       </div>
       <br />
       <div className="ProductoCalificaiones">
@@ -41,7 +41,7 @@ export default function Product() {
       </div>
       <br />
       <div className="ProductoPrecio">
-        <h4 >Precio: $ 100.000</h4>
+        <h4 >Precio: $ 15.000</h4>
       </div>
       <br />
       <div className="ProductoComprar">
@@ -110,9 +110,9 @@ export default function Product() {
 
   <div className="ProductoSecundario">
     <div className="ProductoOtros">
-      <img onClick={() => navigation("/product2")} src="https://files.rcnradio.com/2021-04/Paseador%20de%20perros.jpg" alt="" />
-      <h4 onClick={() => navigation("/product2")} >Jorge Granados</h4>
-      <p>Precio: $ 15.000</p>
+      <img onClick={() => navigation("/product2")} src="https://entrecaninos.co/sitio/wp-content/uploads/2022/04/ENTRECANINOS-2.png" alt="" />
+      <h4 onClick={() => navigation("/product2")} >Entrecaninos</h4>
+      <p>Precio: $ 100.000</p>
     </div>
     <div className="ProductoOtros">
       <img onClick={() => navigation("/product3")}  src="https://img.lalr.co/cms/2015/09/08165418/spacanino.jpg" alt="" />

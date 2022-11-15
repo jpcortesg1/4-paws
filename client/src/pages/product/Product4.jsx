@@ -9,7 +9,7 @@ import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
 
 
 
-export default function Product() {
+export default function Product4() {
 
   const navigate = useNavigate();
 
@@ -22,13 +22,13 @@ export default function Product() {
 
   <div className="Productoprincipal">
     <div className="Productoimagen">
-        <img src="https://entrecaninos.co/sitio/wp-content/uploads/2022/04/ENTRECANINOS-2.png" alt="" />
+        <img src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
     </div>
 
     
     <div className="ProductoInformacion">
       <div className="ProductoTittulo">
-        <h4 >Entrecaninos</h4>
+        <h4 >Kong</h4>
       </div>
       <br />
       <div className="ProductoCalificaiones">
@@ -41,7 +41,7 @@ export default function Product() {
       </div>
       <br />
       <div className="ProductoPrecio">
-        <h4 >Precio: $ 100.000</h4>
+        <h4 >Precio: $ 56.000</h4>
       </div>
       <br />
       <div className="ProductoComprar">
@@ -120,9 +120,9 @@ export default function Product() {
       <p>Precio: $ 55.000</p>
     </div>
     <div className="ProductoOtros">
-      <img onClick={() => navigation("/product4")}  src="https://iconopet.com/sitio/wp-content/uploads/2015/10/035585111315-scaled.jpg" alt="" />
-      <h4 onClick={() => navigation("/product4")} >Kong</h4>
-      <p>Precio: $ 56.000</p>
+      <img onClick={() => navigation("/product2")} src="https://entrecaninos.co/sitio/wp-content/uploads/2022/04/ENTRECANINOS-2.png" alt="" />
+      <h4 onClick={() => navigation("/product2")} >Entrecaninos</h4>
+      <p>Precio: $ 100.000</p>
     </div>
     <div className="ProductoOtros">
       <img onClick={() => navigation("/product5")}  src="https://i0.wp.com/monamipetshop.com/wp-content/uploads/2021/05/Tazones-RUFO-min.png?fit=800%2C800&ssl=1" alt="" />
