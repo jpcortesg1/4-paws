@@ -1,0 +1,16 @@
+.home2 {
+    display: flex;
+    width: 100%;
+    .home2Container {
+      flex: 6;
+      .top {
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        .title {
+            color: rgb(0, 131, 143);
+            margin-bottom: 20px;
+        }
+        }
+    }
+}

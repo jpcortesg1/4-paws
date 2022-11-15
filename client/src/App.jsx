@@ -7,11 +7,11 @@ import Login from "./pages/login/Login";
 import Supplier from "./pagesS/Supplier/Supplier";
 import ListE from "./pagesS/list/List";
 import ListP from "./pagesS/listProduct/ListP";
-import NewU from "./pagesS/newU/NewU";
-import NewP from "./pagesS/newP/NewP";
+import New from "./pagesS/new/New";
 import SingleS from "./pagesS/single/Single";
 import SProducts from "./pagesS/Sproducts/SProducts";
-import LoginS from "./pagesS/loginS/LoginS";
+import Home2 from "./pagesS/home2/Home2";
+import { productInputs, userInputs } from "./formSource";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -31,16 +31,16 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="supplier" >
               <Route index element={<Supplier/>}/>
-              <Route path="loginS" element={<LoginS/>}/>
+              <Route path="home" element={<Home2/>}/>
               <Route path="manage-Employes">
                 <Route index element={<ListE/>}/>
                 <Route path=":userid" element={<SingleS/>}/>
-                <Route path="newU" element={<NewU/>} />
+                <Route path="new" element={<New inputs={userInputs} title="Add New User" />}/>
               </Route>
               <Route path="manage-Products">
                 <Route index element={<ListP/>}/>
                 <Route path=":productId" element={<SProducts/>}/>
-                <Route path="newP" element={<NewP/>} />
+                <Route path="new" element={<New inputs={productInputs} title="Add New Product" />}/>
               </Route>
             </Route>
           </Route>

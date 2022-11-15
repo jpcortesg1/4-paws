@@ -29,10 +29,12 @@ const Sidebar = () => {
             <div className="centerS">
                 <ul>
                     <p className="title">SUPPLIER</p>
-                    <li>
-                        <HomeOutlinedIcon className="icon" />
-                        <span> Main Page</span>
-                    </li>
+                    <Link to="/supplier/home" style={{ textDecoration: "none" }}>
+                        <li>
+                            <HomeOutlinedIcon className="icon" />
+                            <span> Main Page</span>
+                        </li>
+                    </Link>
                     <Link to="/supplier" style={{ textDecoration: "none" }}>
                         <li>
                             <DashboardOutlinedIcon className="icon"/>

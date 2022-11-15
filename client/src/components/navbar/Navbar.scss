@@ -1,6 +1,6 @@
   .navbar {
-    height: 50px;
-    border-bottom: 0.5px solid rgb(231, 228, 228);
+    height: 51px;
+    border-bottom: 1.5px solid #058c9e;
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -16,8 +16,7 @@
       .search {
         display: flex;
         align-items: center;
-        border: 0.5px solid lightgray;
-        padding: 3px;
+        padding: 0.5px;
   
         input {
           border: none;
@@ -25,7 +24,7 @@
           background: transparent;
   
           &::placeholder {
-            font-size: 12px;
+            font-size: 15px;
           }
         }
       }

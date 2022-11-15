@@ -29,17 +29,17 @@ const Single = () => {
                 </div>
                 <div className="detailItem">
                   <span className="itemKey">Phone:</span>
-                  <span className="itemValue">+1 2345 67 89</span>
+                  <span className="itemValue">+57 312 455 67 89</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Address:</span>
+                  <span className="itemKey">Cedula</span>
                   <span className="itemValue">
-                    Elton St. 234 Garden Yd. NewYork
+                    1002337152
                   </span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Country:</span>
-                  <span className="itemValue">USA</span>
+                  <span className="itemKey">Charge</span>
+                  <span className="itemValue">Seller</span>
                 </div>
               </div>
             </div>
