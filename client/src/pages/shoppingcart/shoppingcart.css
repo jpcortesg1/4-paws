@@ -1,0 +1,42 @@
+.CarritoProductos{
+    box-shadow: 7px 13px 30px rgb(117, 117, 117);
+    width: 80%;
+    margin-left: 15rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.CarritoProductos__producto{
+    display: flex;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.CarritoProductos_producto_imagen img{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.CarritoProductos_producto_imagen{
+    text-align: center;
+}
+
+
+.CarritoProductos_producto_cantidad{
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+.CarritoProductos_producto_precio{
+    margin-left: 30rem;
+    margin-top: 10rem;
+}
+
+.PrecioTotal{
+    margin-top: 2rem;
+    margin-left: 80rem;
+}
+.ComprarAhora{
+    margin-top: 2rem;
+    margin-left: 80rem;
+}
